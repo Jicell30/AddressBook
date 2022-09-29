@@ -20,16 +20,16 @@ class GroupController {
     }
     
     //CRUD
-    func createGroup(name: String = "Untitled Group", people: [Person] = []){
+    func createGroup(name: String = "Untitled Group", people: [Person] = []) {
         let groupCreated = Group(name: name, people: people)
         groups.append(groupCreated)
-        
+        print(groups)
         saveContactsToDisk()
     }
     
     func updateGroup(groupToUpdate: Group, newName: String) {
         groupToUpdate.name = newName
-        groupToUpdate.people = []
+       // groupToUpdate.people = []
         
         saveContactsToDisk()
     }
@@ -38,17 +38,18 @@ class GroupController {
         groups.remove(at: indexGroupToDelete)
         saveContactsToDisk()
     }
-    // Save to persistence storage
-    // MARK: - Save to Persistent Storage
+    // MARK: - Save to Persistance Storage
         private var fileURL: URL? {
             guard let documentsDirectoryURL =
                     FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {return nil}
                     let finalURL = documentsDirectoryURL.appendingPathComponent("addressbook.json")
                     return finalURL
+            
         }
 
         func saveContactsToDisk() {
             guard let saveLocation = fileURL else {return}
+            
             do {
                 let data = try JSONEncoder().encode(groups)
                 try data.write(to: saveLocation)
@@ -67,6 +68,7 @@ class GroupController {
             } catch let error {
                 print(error)
             }
+        
         }
 }
 

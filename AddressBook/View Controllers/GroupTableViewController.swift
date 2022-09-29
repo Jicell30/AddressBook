@@ -25,9 +25,14 @@ class GroupTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AddressBookGroupCell", for: indexPath)
         let group = groupController.groups[indexPath.row]
+        
+        print(group)
         cell.textLabel?.text = group.name
         cell.detailTextLabel?.text = "\(group.people.count) People"
         return cell
+        
+        //
+       
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -40,6 +45,7 @@ class GroupTableViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
         guard segue.identifier == "toPeopleTableViewController",
               let peopleTableViewController = segue.destination as? PeopleTableViewController,
               let selectedRow = tableView.indexPathForSelectedRow?.row else { return }

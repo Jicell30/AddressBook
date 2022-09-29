@@ -12,13 +12,7 @@ class PeopleTableViewController: UITableViewController {
     @IBOutlet weak var groupNameTextField: UITextField!
     var group: Group?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-        
-       
-    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         groupNameTextField.text = group?.name
@@ -66,10 +60,20 @@ class PeopleTableViewController: UITableViewController {
     }
     
     // MARK: - Actions
-    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+    //@IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+       // guard let group = group else { return }
+      //  PersonController.createPerson(group: group)
+   //     tableView.reloadData()}
+ 
+    
+    @IBAction func addButtonTapped(_ sender: Any) {
+        print("hello")
         guard let group = group else { return }
         PersonController.createPerson(group: group)
         tableView.reloadData()
+        
     }
+    
+    
     
 }
