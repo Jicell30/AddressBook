@@ -45,10 +45,13 @@ class GroupTableViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      
+      //
         guard segue.identifier == "toPeopleTableViewController",
+              //
               let peopleTableViewController = segue.destination as? PeopleTableViewController,
+              
               let selectedRow = tableView.indexPathForSelectedRow?.row else { return }
+        //
         let group = groupController.groups[selectedRow]
         peopleTableViewController.group = group
     }

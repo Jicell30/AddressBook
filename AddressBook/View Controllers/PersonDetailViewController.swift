@@ -11,8 +11,8 @@ class PersonDetailViewController: UIViewController {
 
     //MARK: -IBOutlets
     @IBOutlet weak var nameTextField: UITextField!
-    
     @IBOutlet weak var addressTextField: UITextField!
+    
     
     //MARK: -Properties
     var person: Person?

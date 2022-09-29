@@ -14,6 +14,7 @@
 		5F185C2828E278C8008B5A92 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F185C2728E278C8008B5A92 /* PeopleTableViewController.swift */; };
 		5F185C2A28E278E3008B5A92 /* GroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F185C2928E278E3008B5A92 /* GroupTableViewController.swift */; };
 		5F185C2C28E2790F008B5A92 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F185C2B28E2790F008B5A92 /* PersonDetailViewController.swift */; };
+		5F56EEF328E5AFE5006EC1F1 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56EEF228E5AFE5006EC1F1 /* PersonTableViewCell.swift */; };
 		F7FB3DE527163FDB0091D1B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FB3DE427163FDB0091D1B1 /* AppDelegate.swift */; };
 		F7FB3DE727163FDB0091D1B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FB3DE627163FDB0091D1B1 /* SceneDelegate.swift */; };
 		F7FB3DEC27163FDB0091D1B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FB3DEA27163FDB0091D1B1 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		5F185C2728E278C8008B5A92 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
 		5F185C2928E278E3008B5A92 /* GroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewController.swift; sourceTree = "<group>"; };
 		5F185C2B28E2790F008B5A92 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		5F56EEF228E5AFE5006EC1F1 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		F7FB3DE127163FDB0091D1B1 /* AddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FB3DE427163FDB0091D1B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7FB3DE627163FDB0091D1B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		5F56EEF428E5AFED006EC1F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F56EEF228E5AFE5006EC1F1 /* PersonTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F7040FF52716526500B913AC /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 				5F185C1A28E24034008B5A92 /* Models */,
 				5F185C2128E245E7008B5A92 /* Model Controllers */,
 				5F185C2D28E2797B008B5A92 /* View Controllers */,
+				5F56EEF428E5AFED006EC1F1 /* Views */,
 			);
 			path = AddressBook;
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 				5F185C2028E245D9008B5A92 /* GroupModelController.swift in Sources */,
 				F7FB3DE727163FDB0091D1B1 /* SceneDelegate.swift in Sources */,
 				5F185C2828E278C8008B5A92 /* PeopleTableViewController.swift in Sources */,
+				5F56EEF328E5AFE5006EC1F1 /* PersonTableViewCell.swift in Sources */,
 				5F185C1C28E240A6008B5A92 /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
